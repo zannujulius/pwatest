@@ -53,7 +53,7 @@ self.addEventListener("fetch", (event) => {
 
 // activate the sw
 self.addEventListener("activate", (event) => {
-  // removing al the previous cache and activate the new one
+  // removing all the previous cache and activate the new one
   const cacheWhiteList = [];
   cacheWhiteList.push(CACHE_NAME);
   event.waitUntil(
